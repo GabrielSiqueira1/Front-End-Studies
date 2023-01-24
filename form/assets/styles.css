@@ -1,0 +1,27 @@
+body{
+    padding: 0 20em 0 20em;   
+    background-color: whitesmoke;
+    font-family: cursive;
+}
+
+.intern{
+    
+}
+
+h2{
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h3{
+    text-align: justify;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#box{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px 0 20px 0;
+}
