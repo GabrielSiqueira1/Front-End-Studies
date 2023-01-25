@@ -1,6 +1,6 @@
 .intern {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
 }
 
 @font-face {
@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url("white.png");
+    background-image: url("background.png");
 }
 
 .one{ 
@@ -17,14 +17,25 @@ body{
     font-family: myFirstFont;
     grid-column: 2 / 3;
     grid-row: 1;
-    padding: 10%;
     font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.two{
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.three{
+    padding: 10% 10% 10% 0;
+    grid-column: 2 / 2;
+    grid-row: 1;
 }
 
 h2{
-    text-align: center;
     font-weight: lighter;
-    font-style: italic;
+    color: green;
 }
 
 h3{
@@ -35,8 +46,8 @@ h3{
 
 #box{
     border:none;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 10px;
     margin: 10px 0 20px 0;
     min-width: 100%;
 }
