@@ -1,71 +1,146 @@
-.intern {
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-}
+@media screen and (min-width: 821px){
+    .intern {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
 
-@font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
-}
-
-body{
-    background-image: url("background.png");
-}
-
-.one{ 
-    background-color: whitesmoke;
+    @font-face {
     font-family: myFirstFont;
-    grid-column: 2 / 3;
-    grid-row: 1;
-    font-size: 14px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    src: url(sansation_light.woff);
+    }
+
+    body{
+        background-image: url("background.png");
+    }
+
+    .one{ 
+        background-color: whitesmoke;
+        font-family: myFirstFont;
+        grid-column: 2 / 3;
+        grid-row: 1;
+        font-size: 14px;
+        display: grid;
+        grid-template-columns: 1fr minmax(50%, 1fr);
+    }
+
+    .two{
+        grid-column: 1 / 2;
+        grid-row: 1;
+        width: 100%;
+        height:auto;
+    }
+
+    .three{
+        padding: 10%;
+        grid-column: 2 / 2;
+        grid-row: 1;
+    }
+
+    h2{
+        font-weight: lighter;
+        color: green;
+    }
+
+    h3{
+        text-align: justify;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+
+    #box{
+        border:none;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px 0 20px 0;
+        min-width: 100%;
+    }
+
+    #seletor{
+        padding: 10px;
+        margin: 10px 0 20px 0;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #button{
+        padding: 15px;
+        border-radius: 10%;
+        border: none;
+        background-color: rgb(155, 245, 155);
+    }
+
 }
 
-.two{
-    grid-column: 1 / 2;
-    grid-row: 1;
-}
-
-.three{
-    padding: 10% 10% 10% 0;
-    grid-column: 2 / 2;
-    grid-row: 1;
-}
-
-h2{
-    font-weight: lighter;
-    color: green;
-}
-
-h3{
-    text-align: justify;
-    font-weight: lighter;
-    font-size: 14px;
-}
-
-#box{
-    border:none;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0 20px 0;
-    min-width: 100%;
-}
-
-#seletor{
-    padding: 10px;
-    margin: 10px 0 20px 0;
-}
-
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#button{
-    padding: 15px;
-    border-radius: 10%;
-    border: none;
-    background-color: rgb(155, 245, 155);
+@media screen and (max-width: 820px){
+    .intern {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    
+    @font-face {
+      font-family: myFirstFont;
+      src: url(sansation_light.woff);
+    }
+    
+    body{
+        background-image: url("background.png");
+    }
+    
+    .one{ 
+        background-color: whitesmoke;
+        font-family: myFirstFont;
+        grid-column: 2 / 3;
+        grid-row: 1;
+        font-size: 14px;
+    }
+    
+    .two{
+        width: 100%;
+        height:auto;
+    }
+    
+    .three{
+        padding: 10%;
+    }
+    
+    h2{
+        font-weight: lighter;
+        color: green;
+    }
+    
+    h3{
+        text-align: justify;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+    
+    #box{
+        border:none;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px 0 20px 0;
+        min-width: 100%;
+    }
+    
+    #seletor{
+        padding: 10px;
+        margin: 10px 0 20px 0;
+    }
+    
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #button{
+        padding: 15px;
+        border-radius: 10%;
+        border: none;
+        background-color: rgb(155, 245, 155);
+    }
 }
