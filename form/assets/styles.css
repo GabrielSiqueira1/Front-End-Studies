@@ -1,11 +1,14 @@
-body{
-    padding: 0 20em 0 20em;   
-    background-color: whitesmoke;
-    font-family: cursive;
+.intern {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
-.intern{
-    
+.one{ 
+    background-color: whitesmoke;
+    font-family: cursive;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    padding: 10%;
 }
 
 h2{
@@ -24,4 +27,5 @@ h3{
     border-radius: 5px;
     padding: 5px;
     margin: 20px 0 20px 0;
+    min-width: 100%;
 }
