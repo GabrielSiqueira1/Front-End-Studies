@@ -51,3 +51,21 @@ h3{
     margin: 10px 0 20px 0;
     min-width: 100%;
 }
+
+#seletor{
+    padding: 10px;
+    margin: 10px 0 20px 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    padding: 15px;
+    border-radius: 10%;
+    border: none;
+    background-color: rgb(155, 245, 155);
+}
