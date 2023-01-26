@@ -1,0 +1,53 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+body {
+    font-family: 'Aboreto';font-size: 22px;
+}
+
+.container {
+  /* The image used */
+  opacity: 50%;
+  background-image: url("./1.png");
+
+  /* Set a specific height */
+  min-height: 700px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-1 {
+    /* The image used */
+    opacity: 50%;
+    background-image: url("./2.png");
+  
+    /* Set a specific height */
+    min-height: 700px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.container img{
+    opacity: 50%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+}
