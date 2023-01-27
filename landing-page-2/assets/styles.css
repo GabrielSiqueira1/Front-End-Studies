@@ -32,6 +32,19 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax-2 {
+    position: relative;
+    text-align: center;
+    color: black;
+    min-height: 400px; 
+
+    opacity: 0.3;
+    background-image: url("./4.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .first .display{
     display: flex;
@@ -90,6 +103,7 @@
     .thrid{
         display: flex;
         flex-direction: row;
+        align-items: center;
         background-color: rgb(31, 31, 31);
         padding: 48px;
         font-family: 'Fira-Sans', sans-serif;
@@ -112,6 +126,37 @@
     .thrid #around h4, .thrid #around p {
         padding: 20px;
     }   
+
+    .fourth{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Fira-Sans', sans-serif;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .fourth .fourth-1{
+        flex-basis: 50%;
+        flex-grow: 0;
+        background-color: brown;
+        height:200px;
+    }
+
+    .fourth .fourth-1 h3, .fourth .fourth-2 h3{
+        padding: 30px;
+    }
+
+    .fourth .fourth-1 p, .fourth .fourth-2 p{
+        padding: 30px;
+    }
+
+    .fourth .fourth-2{
+        flex-basis: 50%;
+        flex-grow: 0;
+        background-color: blueviolet;
+        height:200px;
+    }
 }
 
 @media screen and (max-width: 1160px) {
@@ -122,6 +167,7 @@
         padding: 48px;
         font-family: 'Fira-Sans', sans-serif;
         text-align: center;
+        align-items: center;
     }
 
     .thrid #around {
@@ -142,6 +188,38 @@
         padding: 20px;
         justify-content: center;
     }
+    .fourth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Fira-Sans', sans-serif;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .fourth .fourth-1{
+        flex-basis: 50%;
+        flex-grow: 0;
+        background-color: brown;
+        height: 200px;
+        width: 100%;
+    }
+
+    .fourth .fourth-1 h3, .fourth .fourth-2 h3{
+        padding: 30px;
+    }
+
+    .fourth .fourth-1 p, .fourth .fourth-2 p{
+        padding: 30px;
+    }
+
+    .fourth .fourth-2{
+        flex-basis: 50%;
+        flex-grow: 0;
+        background-color: blueviolet;
+        height: 200px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 460px) {
@@ -152,6 +230,7 @@
         padding: 48px;
         font-family: 'Fira-Sans', sans-serif;
         text-align: center;
+        align-items: center;
     }
 
     .thrid #around {
@@ -171,5 +250,30 @@
     .thrid #around h4, .thrid #around p {
         padding: 20px;
         justify-content: center;
+    }
+    .fourth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(31, 31, 31);
+        font-family: 'Fira-Sans', sans-serif;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .fourth .fourth-1{
+        flex-basis: 50%;
+        flex-grow: 0;
+        background-color: brown;
+    }
+
+    .fourth .fourth-1 h3, .fourth .fourth-2 h3{
+        padding: 30px;
+    }
+
+    .fourth .fourth-2{
+        flex-basis: 50%;
+        flex-grow: 0;
+        background-color: blueviolet;
     }
 }
