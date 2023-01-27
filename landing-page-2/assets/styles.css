@@ -19,6 +19,20 @@
     background-size: cover;
 }
 
+.parallax-1 {
+    position: relative;
+    text-align: center;
+    color: black;
+    min-height: 300px; 
+
+    opacity: 0.3;
+    background-image: url("./3.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .first .display{
     display: flex;
     flex-direction: column;
@@ -28,18 +42,21 @@
     transform: translate(-50%, -50%);
     gap: 30px;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
     font-family: 'Fira-Sans', sans-serif;
 }
 
 .first .display h1{
     color: black;
-    align-self: center;
+    text-align: center;
 }
 
 .first .display h2{
     color: black;
-    align-self: center;
     font-size: 18px;
+    text-align: center;
 }
 
 .first .display button{
@@ -49,7 +66,6 @@
     font-size: 16px;
     color: black;
     background-color: rgb(182, 182, 182);
-    align-self: center;
     font-weight: bolder;
     cursor: pointer;
 }
@@ -67,4 +83,93 @@
     padding: 48px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+@media  screen and (min-width: 1161px) {
+    .thrid{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(31, 31, 31);
+        padding: 48px;
+        font-family: 'Fira-Sans', sans-serif;
+        text-align: center;
+    }
+
+    .thrid #around {
+        background-color: rgb(182, 182, 182);
+        padding: 40px;
+        margin: 20px;
+    }
+
+    .thrid #around img {
+        max-width: 200px;
+        max-height: 200px;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    .thrid #around h4, .thrid #around p {
+        padding: 20px;
+    }   
+}
+
+@media screen and (max-width: 1160px) {
+    .thrid{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(31, 31, 31);
+        padding: 48px;
+        font-family: 'Fira-Sans', sans-serif;
+        text-align: center;
+    }
+
+    .thrid #around {
+        background-color: rgb(182, 182, 182);
+        padding: 40px;
+        margin: 20px;
+    }
+
+    .thrid #around img {
+        width: 100%;
+        max-height: auto;
+        overflow: hidden;
+        padding: 20px;
+        max-width: 200px;
+    }
+
+    .thrid #around h4, .thrid #around p {
+        padding: 20px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .thrid{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(31, 31, 31);
+        padding: 48px;
+        font-family: 'Fira-Sans', sans-serif;
+        text-align: center;
+    }
+
+    .thrid #around {
+        background-color: rgb(182, 182, 182);
+        padding: 40px;
+        margin: 20px;
+    }
+
+    .thrid #around img {
+        width: 100%;
+        max-height: auto;
+        overflow: hidden;
+        padding: 20px;
+        max-width: 100px;
+    }
+
+    .thrid #around h4, .thrid #around p {
+        padding: 20px;
+        justify-content: center;
+    }
 }
