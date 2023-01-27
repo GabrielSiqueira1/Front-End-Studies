@@ -79,6 +79,10 @@ body{
     cursor: pointer;
 }
 
+.conteudo-principal-escrito-botao:hover{
+    background: linear-gradient(68.15deg, gray 16.62%, rgb(71, 64, 71) 85.61%)
+}
+
 .conteudo-principal-imagem{
     height: 430px;
 }
