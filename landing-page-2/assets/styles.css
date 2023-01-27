@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Fira+Sans:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parallax {
+    position: relative;
+    text-align: center;
+    color: black;
+    min-height: 700px; 
+
+    opacity: 0.3;
+    background-image: url("./2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first .display{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 30px;
+    justify-content: center;
+    font-family: 'Fira-Sans', sans-serif;
+}
+
+.first .display h1{
+    color: black;
+    align-self: center;
+}
+
+.first .display h2{
+    color: black;
+    align-self: center;
+    font-size: 18px;
+}
+
+.first .display button{
+    padding: 20px;
+    border-radius: 5%;
+    border: none;
+    font-size: 16px;
+    color: black;
+    background-color: rgb(182, 182, 182);
+    align-self: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.first .display button:hover{
+    transition: 1s;
+    background-color: gray;
+}
