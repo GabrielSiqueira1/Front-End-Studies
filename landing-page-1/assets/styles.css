@@ -1,1 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg, gray 16.62%, rgb(119, 33, 119) 85.61%);
+}
+
+.cabecalho-imagem{
+    width: 100px;
+    height: auto;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:bolder;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.conteudo{
+    margin-bottom: 45px;
+    border-top: 0.4px dotted white;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-size: 45px;
+    color:whitesmoke;
+    font-weight: bolder;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-size: 24px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.conteudo-principal-escrito-botao{
+    font-size: 18px;
+    background-color: whitesmoke;
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.conteudo-principal-imagem{
+    height: 430px;
+}
+
+.conteudo-secundario{
+    margin-top: 48px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid whitesmoke;
+    padding-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo{
+    font-family: 'Playfair Display', serif;
+    color:whitesmoke;
+}
+
+.rodape{
+    padding: 32px;
+    border-top: 0.4px solid whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    color:whitesmoke;
+}
