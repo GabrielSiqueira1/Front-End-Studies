@@ -58,3 +58,13 @@
     transition: 1s;
     background-color: gray;
 }
+
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Fira-Sans', sans-serif;
+    padding: 48px;
+    justify-content: center;
+    align-items: center;
+}
